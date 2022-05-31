@@ -1,3 +1,71 @@
+.table-grid {
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-columns: 1fr 1fr; */
+  height: 100vh;
+  background-color: #f9f9f9;
+  overflow: scroll;
+  /* width: 100%; */
+  max-width: 100%;
+  /* background: red; */
+  /* border-collapse: collapse; */
+}
+@media (max-width: 768px) {
+  .table-grid {
+    flex-direction: column;
+  }
+}
+.table-grid tr {
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.table-grid tr:hover {
+  background-color: lightgray;
+  /* font-weight: bold; */
+  transition: 100ms ease-out;
+}
+.table-grid tr td {
+  padding: 1rem;
+  min-width: 100px;
+  text-align: left;
+}
+.table-grid-column-one {
+  /* background: red; */
+  padding: 2rem;
+  /* grid-column: 1 / span 2; */
+  flex: 1;
+  max-width: 100%;
+  overflow: scroll;
+}
+.table-grid-column-one table {
+  /* background: blue; */
+  /* width: 100%; */
+}
+.form-container {
+  background: lightgray;
+  /* width: 100%; */
+  flex: 1;
+  padding: 0 1rem;
+}
+/* #type {
+  width: 90px;
+  background: blue;
+} */
+#summary {
+  /* white-space: nowrap; 
+  width: 50px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  border: 1px solid #000000;
+  background-color: red; */
+
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .App {
   text-align: center;
 }
